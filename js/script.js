@@ -23,7 +23,7 @@ const personalMovieDB = {
 
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
-        const film = prompt('Один из последних фильмов?', '');
+        const film = prompt('Один из последних фильмов?', '').trim();
         const raiting = prompt('На сколько оцените его?', '');
         if (!raiting || !film || film.length > 50) {
             console.log('Ответ не должен быть пустым или содержать более 50 символов');
